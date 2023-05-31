@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  opacity: .6;
+
+  .social-network {
+    padding-bottom: 20px;
+    display: flex;
+    gap: 4px;
+
+    &-icon:hover {
+      opacity: .4;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}

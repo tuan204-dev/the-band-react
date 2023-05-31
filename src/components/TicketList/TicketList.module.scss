@@ -1,0 +1,44 @@
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+}
+
+.ticket-item {
+  display: flex;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &-date {
+    color: #757575;
+  }
+
+  &-status {
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+
+  &-quantity {
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
+  }
+}

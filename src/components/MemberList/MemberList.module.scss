@@ -1,0 +1,24 @@
+.member-list {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.member-item {
+  width: 150px;
+
+  &-name {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  &-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+}

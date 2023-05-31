@@ -1,0 +1,50 @@
+@import '../../../scss/variable.scss';
+
+.place-item {
+  flex: 1;
+  margin-inline: 8px;
+  background-color: #fff;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.header {
+  width: 100%;
+
+  
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    &:hover {
+      filter: brightness(.6);
+    }
+  }
+}
+
+.body {
+  padding-inline: 16px;
+  font-size: 15px;
+  padding-bottom: 16px;
+
+  .place-name,
+  .place-time,
+  .place-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .place-time {
+    opacity: .6;
+  }
+
+  .buy-ticket-btn {
+    @include button
+  }
+}
