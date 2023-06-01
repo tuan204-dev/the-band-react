@@ -19,7 +19,8 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  autoplay: true
+  autoplay: true,
+  draggable: false
 };
 
 const data = [

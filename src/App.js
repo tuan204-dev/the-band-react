@@ -7,9 +7,13 @@ import TicketList from "./components/TicketList/TicketList";
 import Places from "./components/Places/Places";
 import Contact from "./components/Contact/Contact";
 import Map from "./components/Map/Map";
-import Footer from './components/Footer/Footer'
+import Footer from "./components/Footer/Footer";
+import Modal from "./components/Modal/Modal";
+import { useState } from "react";
 
 function App() {
+  const [modalVisible, setModalVisible] = useState(false);
+
   return (
     <div className='App'>
       <Header />
@@ -21,25 +25,26 @@ function App() {
         isDesc={true}
         desc={theBandDesc}
       >
-        <MemberList/>
+        <MemberList />
       </ContentSection>
       <ContentSection
         bgcolor={"#000"}
         title={"Tour dates"}
         subTitle={"Remember to book your tickets!"}
       >
-        <TicketList/>
-        <Places/>
+        <TicketList />
+        <Places setModalVisible={setModalVisible} />
       </ContentSection>
       <ContentSection
         bgcolor={"#fff"}
         title={"Contact"}
         subTitle={"Fan? Drop a note!"}
       >
-        <Contact/>
+        <Contact />
       </ContentSection>
-      <Map/>
-      <Footer/>
+      <Map />
+      <Footer />
+      {modalVisible && <Modal setModalVisible={setModalVisible} />}
     </div>
   );
 }

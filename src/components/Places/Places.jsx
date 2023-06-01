@@ -30,10 +30,13 @@ const data = [
 ];
 
 const Places = (props) => {
+  const { setModalVisible } = props;
+
   return (
     <div className={cx("places")}>
       {data.map((place, index) => (
         <PlaceItem
+          setModalVisible={setModalVisible}
           key={index}
           name={place.name}
           time={place.time}

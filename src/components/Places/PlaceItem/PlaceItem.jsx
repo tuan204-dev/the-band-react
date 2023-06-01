@@ -9,7 +9,7 @@ const cx = classNames.bind(styles)
 
 const PlaceItem = props => {
 
-  const {name, time, desc, img} = props
+  const {name, time, desc, img, setModalVisible} = props
 
 
   return (
@@ -21,7 +21,7 @@ const PlaceItem = props => {
         <h3 className={cx('place-name')}>{name}</h3>
         <p className={cx('place-time')}>{time}</p>
         <p className={cx('place-desc')}>{desc}</p>
-        <button className={cx('buy-ticket-btn')}>Buy Tickets</button>
+        <button onClick={() => setModalVisible(true)} className={cx('buy-ticket-btn')}>Buy Tickets</button>
       </div>
     </div>
   );

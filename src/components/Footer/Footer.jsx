@@ -23,7 +23,7 @@ const Footer = (props) => {
 
       <div className={cx("copyright")}>
         Powered by{" "}
-        <a target='_blank' href='facebook.com/tuan204.dev'>
+        <a target='_blank' href='https://www.facebook.com/tuan204.dev' rel="noreferrer">
           tuan204.dev
         </a>
       </div>
