@@ -1,10 +1,15 @@
 @import '../../scss/variable.scss';
+@import '../../scss/breakpoint';
 
 .contact {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
+  @include responsive(sm) {
+    flex-direction: column;
+    row-gap: 16px;
+  }
 
   &-info {
     flex: 1;
@@ -25,7 +30,7 @@
 
   &-form {
     flex: 1;
-
+    
     form {
       display: flex;
       flex-direction: column;
@@ -59,4 +64,10 @@
 .right-side {
   display: flex;
   justify-content: flex-end;
+}
+
+
+
+.hello {
+  //nothing
 }

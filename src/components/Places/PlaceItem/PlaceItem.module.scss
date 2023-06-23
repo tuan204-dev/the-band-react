@@ -1,4 +1,5 @@
 @import '../../../scss/variable.scss';
+@import '../../../scss/breakpoint';
 
 .place-item {
   flex: 1;
@@ -11,6 +12,10 @@
 
   &:first-child {
     margin-left: 0;
+  }
+
+  @include responsive(sm) {
+    margin: 0;
   }
 }
 

@@ -1,13 +1,27 @@
+@import '../../scss/breakpoint';
+
 .member-list {
   width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
   justify-content: space-around;
+
+  @include responsive(sm) {
+    flex-direction: column;
+  }
 }
 
 .member-item {
   width: 150px;
+  @include responsive(sm) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
 
   &-name {
     font-size: 15px;
@@ -20,5 +34,9 @@
     width: 100%;
     object-fit: contain;
     border-radius: 4px;
+
+    @include responsive(sm) {
+      width: 60%;
+    }
   }
 }
